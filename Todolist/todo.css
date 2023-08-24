@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+#main {
+  width: 70vw;
+  background-color: rgb(206, 224, 239);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.content {
+  width: 90%;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+button:hover {
+  color: rgb(58, 113, 202);
+  cursor: pointer;
+}
+ul li {
+  list-style-type: none;
+}
+p {
+  color: gray;
+  font-size: large;
+}
+#complete-all:hover{
+  cursor: pointer;
+  color: black;
+}
+#clear-completed:hover{
+  cursor: pointer;
+  color: black;
+}
+
+/* add new task */
+#new-task {
+  width: 95%;
+  height: 6vh;
+  font-size: larger;
+  outline: none;
+  border: none;
+}
+#add-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+
+/* incompleted tasks */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  position: relative;
+}
+li > label,input[type="text"] {
+  font-size: 18px;
+  line-height: 20px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li > div {
+  float: right;
+}
+li > div > .delete:hover {
+  color: #cf2323;
+}
+.edit,
+.delete {
+  margin: 0px 10px;
+}
+
+/* completed tasks */
+h3 {
+  color: green;
+  padding: 5px 10px;
+  background-color: rgb(138, 227, 227);
+  border-radius: 10px;
+}
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: inline;
+}
+
+ul li.editMode label {
+  display: none;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./todo.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="content">
+        <div id="add-list">
+          <input type="text" placeholder="Type your todo list" id="new-task" />
+          <button>ADD</button>
+        </div>
+        <br />
+        <div style="display: flex; justify-content: space-between">
+          <p id="complete-all">Complete all task</p>
+          <p id="clear-completed">Clear completed</p>
+        </div>
+        <br />
+        <hr />
+        <ul id="incomplete-tasks">
+          <li>
+            <input type="checkbox" />
+            <label>Pay Bill</label>
+            <input type="text" />
+
+            <div>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label>Go Shopping</label>
+            <input type="text" value="Go Shopping" />
+            <div>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </li>
+        </ul>
+        <p style="padding: 5px 0px;color: red;" id="pending"></p>
+        <h3>Completed Tasks</h3>
+        <ul id="completed-tasks">
+          <li>
+            <input type="checkbox" checked="" />
+            <label>See the Doctor</label>
+            <input type="text" />
+            <div>
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
